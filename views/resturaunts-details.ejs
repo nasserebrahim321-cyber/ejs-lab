@@ -22,13 +22,18 @@
                 address : <%=restaurant.address%>
                     <br>
                     Phone : <%=restaurant.phone%>
+                        <br>
+                        <br>
                         Menu :
+                        <br>
                         <% for(let i of restaurant.menu) {%>
                             <%=i.name%>
                                 <br>
                                 Price : <%=i.price%>
                                     <br>
                                     Rating : <%=i.rating%>
+                                        <br>
+                                        <br>
                                         <%}%>
 
                                             </p>
