@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Restaurant Details</h1>
+    <p>
+    <h2>
+        <%=restaurant.name%>
+    </h2>
+    <% if(restaurant.isOpen) {%>
+        - Open
+        <%} else {%>
+            - Close
+            <%}%>
+                <br>
+                address : <%=restaurant.address%>
+                    <br>
+                    Phone : <%=restaurant.phone%>
+                        Menu :
+                        <% for(let i of restaurant.menu) {%>
+                            <%=i.name%>
+                                <br>
+                                Price : <%=i.price%>
+                                    <br>
+                                    Rating : <%=i.rating%>
+                                        <%}%>
+
+                                            </p>
+</body>
+
+</html>
